@@ -26,11 +26,11 @@ public class LeftMenuGener {
 	private Context mContext;
 	private LayoutInflater mInflater;
 	private View mContentView;
-	private RelativeLayout mRl;
+	private RelativeLayout mMrl;
 	private DisplayMetrics mDm;
 	private ListView mLv;
 	private LinearLayout mLl;
-	private RelativeLayout mRl1;
+	private RelativeLayout mRl;
 	//test data
 	private static final String LEFTMENU_DATA="{'leftmenu_data':[{'id':'1','position':'1','name':'我的好友','action':'http://www.baidu.com'},{'id':'2','position':'2','name':'我的收藏','action':'http://www.baidu.com'},{'id':'3','position':'3','name':'浏览历史','action':'http://www.baidu.com'},{'id':'4','position':'4','name':'账号管理','action':'http://www.baidu.com'},{'id':'5','position':'5','name':'退出贴吧','action':'http://www.baidu.com'}]}";
 	private List<LeftMenuHolder> leftMenuList;
@@ -46,9 +46,9 @@ public class LeftMenuGener {
 		this.mInflater=(LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		this.mDm=mContext.getResources().getDisplayMetrics();
 		this.mContentView=mInflater.inflate(R.layout.leftmenu_portrait, null);
+		this.mMrl=(RelativeLayout) mContentView.findViewById(R.id.mrl);
+		this.mLl=(LinearLayout) mMrl.findViewById(R.id.ll);
 		this.mRl=(RelativeLayout) mContentView.findViewById(R.id.rl);
-		this.mLl=(LinearLayout) mRl.findViewById(R.id.ll);
-		this.mRl1=(RelativeLayout) mContentView.findViewById(R.id.rl1);
 	}
 	public LeftMenuGener init(LeftMenuGener instance){
 		this.mInstance=instance;
@@ -56,7 +56,7 @@ public class LeftMenuGener {
 		return mInstance;
 	}
 	private void setListView(String leftMenuData){
-		mLv=(ListView) mRl.findViewById(R.id.lv);
+		mLv=(ListView) mMrl.findViewById(R.id.lv);
 		leftMenuList=new ArrayList<LeftMenuHolder>();
 		Gson gson=new Gson();
 		try {
@@ -89,7 +89,7 @@ public class LeftMenuGener {
 			return;
 		}
 		mLv.setAdapter(new MyAdapter(leftMenuList));
-		mLv.getLayoutParams().height=mDm.heightPixels-mRl1.getLayoutParams().height-mLl.getLayoutParams().height;
+		mLv.getLayoutParams().height=mDm.heightPixels-mRl.getLayoutParams().height-mLl.getLayoutParams().height;
 	}
 	public class LeftMenuHolder{
 		String id;

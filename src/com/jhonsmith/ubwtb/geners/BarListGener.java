@@ -32,7 +32,7 @@ public class BarListGener {
 	private Context mContext;
 	private DisplayMetrics mDm;
 	private View mContentView;
-	private RelativeLayout mRl;
+	private RelativeLayout mMrl;
 	private LayoutInflater mInflater;
 	//test data
 	public static final String BAR_DATA="{'bar_data':[{'name':'clannad','level':'8','action':'http://www.baidu.com'},{'name':'clannad','level':'8','action':'http://www.baidu.com'},{'name':'clannad1','level':'0','action':'http://www.baidu.com'},{'name':'clannad2','level':'1','action':'http://www.baidu.com'},{'name':'clannad3','level':'2','action':'http://www.baidu.com'},{'name':'clannad4','level':'3','action':'http://www.baidu.com'},{'name':'clannad5','level':'4','action':'http://www.baidu.com'},{'name':'clannad6','level':'5','action':'http://www.baidu.com'},{'name':'clannad7','level':'6','action':'http://www.baidu.com'},{'name':'clannad8','level':'7','action':'http://www.baidu.com'},{'name':'clannad9','level':'8','action':'http://www.baidu.com'},{'name':'clannad0','level':'9','action':'http://www.baidu.com'},{'name':'clannad01','level':'10','action':'http://www.baidu.com'},{'name':'clannad02','level':'11','action':'http://www.baidu.com'},{'name':'clannad03','level':'12','action':'http://www.baidu.com'},{'name':'clannad04','level':'13','action':'http://www.baidu.com'},{'name':'clannad05','level':'14','action':'http://www.baidu.com'}]}";
@@ -51,7 +51,7 @@ public class BarListGener {
 		this.mDm=((Activity)mContext).getResources().getDisplayMetrics();
 		this.mInflater=(LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		this.mContentView=mInflater.inflate(R.layout.barlist_portrait, null);
-		this.mRl=(RelativeLayout) mContentView.findViewById(R.id.rl);
+		this.mMrl=(RelativeLayout) mContentView.findViewById(R.id.mrl);
 	}
 	public BarListGener init(BarListGener blg){
 		this.mInstance=blg;
@@ -59,7 +59,7 @@ public class BarListGener {
 		return this.mInstance;
 	}
 	private void setGrid(){
-		mGv=(GridView) mRl.findViewById(R.id.gv);
+		mGv=(GridView) mMrl.findViewById(R.id.gv);
 		List<BarDataHolder>barDataList =new ArrayList<BarDataHolder>();
 		try {
 			Gson gson=new Gson();

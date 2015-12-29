@@ -25,6 +25,9 @@
         <activity
             android:name="com.jhonsmith.ubwtb.BarListActivity"
             ></activity>
+        <activity
+            android:name="com.jhonsmith.ubwtb.HomePageActivity"
+            ></activity>
     </application>
 
 </manifest>
