@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.jhonsmith.ubwtb.myviews.BarListButton 
+        android:id="@+id/btn"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/barlist_button"
+        />
+    <LinearLayout 
+        android:id="@+id/ll"
+         android:layout_alignLeft="@+id/btn"
+         android:layout_centerVertical="true"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="5dp">
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:id="@+id/img"
+            android:background="@drawable/baricon_default"/>
+	    <TextView 
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginLeft="8dp"
+        />
+	</LinearLayout>
+   <TextView 
+        android:id="@+id/tv1"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btn"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:textColor="#ffffff"
+        />
+</RelativeLayout>
