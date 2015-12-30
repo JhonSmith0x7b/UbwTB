@@ -89,7 +89,6 @@ public class LeftMenuGener {
 			return;
 		}
 		mLv.setAdapter(new MyAdapter(leftMenuList));
-		mLv.getLayoutParams().height=mDm.heightPixels-mRl.getLayoutParams().height-mLl.getLayoutParams().height;
 	}
 	public class LeftMenuHolder{
 		String id;

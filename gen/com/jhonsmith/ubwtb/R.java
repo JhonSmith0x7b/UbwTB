@@ -2148,11 +2148,12 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020044;
         public static final int baricon_default=0x7f020045;
         public static final int barlist_button=0x7f020046;
-        public static final int barsetting_button=0x7f020047;
-        public static final int example_headportrait=0x7f020048;
-        public static final int ic_launcher=0x7f020049;
-        public static final int leftmenu_background=0x7f02004a;
-        public static final int notification_template_icon_bg=0x7f02004b;
+        public static final int barlist_buttonbackground=0x7f020047;
+        public static final int barsetting_button=0x7f020048;
+        public static final int example_headportrait=0x7f020049;
+        public static final int ic_launcher=0x7f02004a;
+        public static final int leftmenu_background=0x7f02004b;
+        public static final int notification_template_icon_bg=0x7f02004c;
     }
     public static final class id {
         public static final int action0=0x7f07006c;
@@ -2358,18 +2359,19 @@ containing a value of this type.
         public static final int homepage_portrait=0x7f03001c;
         public static final int leftmenu_list_portrait=0x7f03001d;
         public static final int leftmenu_portrait=0x7f03001e;
-        public static final int notification_media_action=0x7f03001f;
-        public static final int notification_media_cancel_action=0x7f030020;
-        public static final int notification_template_big_media=0x7f030021;
-        public static final int notification_template_big_media_narrow=0x7f030022;
-        public static final int notification_template_lines=0x7f030023;
-        public static final int notification_template_media=0x7f030024;
-        public static final int notification_template_part_chronometer=0x7f030025;
-        public static final int notification_template_part_time=0x7f030026;
-        public static final int select_dialog_item_material=0x7f030027;
-        public static final int select_dialog_multichoice_material=0x7f030028;
-        public static final int select_dialog_singlechoice_material=0x7f030029;
-        public static final int support_simple_spinner_dropdown_item=0x7f03002a;
+        public static final int messagepage_portrait=0x7f03001f;
+        public static final int notification_media_action=0x7f030020;
+        public static final int notification_media_cancel_action=0x7f030021;
+        public static final int notification_template_big_media=0x7f030022;
+        public static final int notification_template_big_media_narrow=0x7f030023;
+        public static final int notification_template_lines=0x7f030024;
+        public static final int notification_template_media=0x7f030025;
+        public static final int notification_template_part_chronometer=0x7f030026;
+        public static final int notification_template_part_time=0x7f030027;
+        public static final int select_dialog_item_material=0x7f030028;
+        public static final int select_dialog_multichoice_material=0x7f030029;
+        public static final int select_dialog_singlechoice_material=0x7f03002a;
+        public static final int support_simple_spinner_dropdown_item=0x7f03002b;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
